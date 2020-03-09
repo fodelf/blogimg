@@ -1,3 +1,7 @@
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+  outputDir: 'dist',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/blogimg/'
+    : '/'
 }
